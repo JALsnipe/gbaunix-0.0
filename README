@@ -1,0 +1,38 @@
+
+    Legal
+    -----
+
+    This software contains portions of, or code derived from, SIMH, uClinux,
+    and libgba. You must read and understand software-specific licenses
+    provided in the LICENSES subdirectory before using this software.
+
+    Prerequisites
+    -------------
+
+    You need an RK05 disk image of 5th edition UNIX in order to run gbaunix.
+    The Makefile expects to find it as "disks/unixv5.dsk".
+
+    You can obtain the disk image (after reading and understanding the
+    license, and ensuring that you are eligible) from:
+
+    http://minnie.tuhs.org/PUPS/
+
+    NOTE THAT THE DISK IMAGE'S SIZE SHOULD BE 2494464 BYTES.
+
+    Running
+    -------
+
+    If you only want to run gbaunix, without recompiling it, do the following:
+
+    % cat unixv5.tmp disks/unixv5.dsk > unixv5.gba
+
+    unixv5.tmp is pre-compiled gbaunix, minus the disk image. Once you
+    concatenate the disk image, "unixv5.gba" can be used with a Game Boy
+    Advance emulator, or on real hardware.
+
+    Compiling
+    ---------
+
+    You need an ARM toolchain (such as devkitARM).
+
+    Once you have the disk image as "disks/unixv5.dsk" , simply run make.

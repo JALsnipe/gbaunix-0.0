@@ -1,0 +1,3 @@
+gbaunix contains fragments of code from "libgba":
+
+http://www.devkit.tk
